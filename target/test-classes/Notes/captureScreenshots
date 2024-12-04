@@ -1,0 +1,34 @@
+ScreenShots:
+1. full web page screenshot - need to use interface (takesScreenShot)
+2. specific area from the page -- only available post selenium 4.0.0 only getScreensHot method
+3. Particular webelement - only getScreensHot method
+
+		
+		
+TakesScreenShot interface:
+		
+		TakesScreenshot ts=(TakesScreenshot) driver;
+		File src_img = ts.getScreenshotAs(OutputType.FILE);
+		File trg_img=new File(System.getProperty("user.dir")+"\\screenShots\\fullPage.png");
+		
+		
+ChromeOptions:
+--------------		
+by using this we can control browser specific settings 
+ChromeOptions options=new ChromeOptions();
+options.addArguments("--headless=new");
+headless - without seeing the UI execution 
+--------
+SSL certification:
+------------------
+to handle - setAcceptInsecureCerts(true)
+options.setAcceptInsecureCerts(true)
+
+Run in Incognito mode:
+----------------------
+options.addArguments("--incognito");
+
+Make extension enable -- Ad-blocker this will block all adds
+------------------------------------------------------------
+File file=new File("C:\\Users\\Prabhakaran Chandran\\Downloads\\AdBlocker.crx");
+options.addExtensions(file);

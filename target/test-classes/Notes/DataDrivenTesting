@@ -1,0 +1,18 @@
+To use excel we need to use third party library ApachePOI library
+
+Excel file----->workbook----->sheets----->rows----->cells----->read/Write data
+			XSSFWorkbook	XSSFSheet   XSSFRow   XSSFCell		FileInputStream
+																FileOutputStream	
+from Java:
+----------
+FileInputStream --> reading 
+FileOutputStream --> writing
+
+
+reading from the excel:
+----------------------
+
+Reading properties file:
+------------------------
+
+

@@ -1,0 +1,9 @@
+Web Tables:
+
+1.Static table -- Fixed table
+2.Dynamic Table -- keep changing rows will be increased or decreased
+3.Pagination table -- table contains more data split into pages
+
+need to locate the table then read the row and column data
+
+

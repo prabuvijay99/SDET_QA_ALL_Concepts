@@ -1,0 +1,45 @@
+Mouse Action:
+
+1.Mouse hover - moveToelement(WebElement)
+2.right click - contextClick(WebElement)
+3.double click - doubleClick(WebElement)
+4.drag and drop
+
+Actions is pre defined class provided in Selenium
+
+built() - create an action
+perform() - both create an action and perform the action (we can use only perform without using built method)
+click() - click the action
+
+
+Mouse hover:
+-------------
+Actions act=new Actions(driver)
+act.movetoelement(WebElement).built().perform()
+
+right click:
+------------
+Actions act=new Actions(driver)
+act.contextClick(rightClick).perform();
+
+double click:
+-------------
+Actions act=new Actions(driver)
+act.doubleClick(WebElement).perform()
+
+										getText() vs getAttribute()
+										---------------------------
+										<span id='xyz>Text </span> getText - Text
+										<span id='yz></span>>> - getAttribut(id) - yz
+
+
+Drag and Drop:
+--------------
+Actions act=new Actions(driver)
+act.dragAndDrop(src,dest).perform()
+
+Actions vs Action:
+------------------
+
+Actions - class , is used to perform the mouse action
+Action - Interface is used to store the created actions

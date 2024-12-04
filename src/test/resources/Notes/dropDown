@@ -1,0 +1,19 @@
+DropDown Box:
+-------------
+1.Select Dropdown   ---> dom we can see select tag 
+2.Bootstrap Dropdown
+3.Hidden Drop down
+
+
+Select DropDown:
+
+Select dropDownd=new Select(web element)
+dropDown.selectByVisibleText('VisibleText')
+dropDown.selectByValue('Value')
+dropDown.selectByIndex(index)
+
+HiddenDropdown:
+---------------
+
+Use debugger mode
+

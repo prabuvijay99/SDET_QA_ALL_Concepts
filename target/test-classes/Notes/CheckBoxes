@@ -1,0 +1,9 @@
+Alerts/Popups:
+-------------
+
+1.Normal Alert  -- need to click ok
+2.Confirmation alert -- we have 2 option either ok or cancel to close the alert
+3.Prompting alert -- need to give some message to close the alert
+
+Alert is not a webelement we cannot inspect.
+

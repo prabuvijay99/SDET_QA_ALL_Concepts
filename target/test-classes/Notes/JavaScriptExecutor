@@ -1,0 +1,44 @@
+JavaScriptExecutor:
+-------------------
+It is a interface which is implemented by using remoteWebDriver class
+
+executeScript() - we can execute javascript statements
+
+if java scripts statement is designed in web elements we need to use JSE. 
+
+sometimes click() cannot execute the java script statement internally 
+so it would give  ElementInterceptedException
+
+click() from webDriver
+executeScript() from javaScriptExecutor
+
+option1:
+ChromeDriver driver=new ChromeDriver(); 
+JavascriptExecutor js=driver;
+
+option2: if we use webdriver interface we need to do type casting.
+WebDriver driver=new chromeDriver();
+JavascriptExecutor js=(JavascriptExecutor)driver;
+
+
+--> js.executeScript("arguments[0].setAttribute('value','Dhana')",webElement);  -- sendKeys
+--> js.executeScript("arguments[0].click()",webElement); -- click
+
+Scrolling the page using JSE: this is not web element we cannot inspect
+-----------------------------
+1. scroll till some pixel
+--> js.executeScript("window.scrollBy(0,2500)",""); -- 2500 is pixel value
+--> js.executeScript("return window.pageYOffset;","") -- return the pixel value of Y axis
+
+2. scroll till the element is visible
+--> jse.executeScript("arguments[0].scrollIntoView();", element); -- need to capture the element
+
+3. scroll till end of the page
+-->jse.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+
+
+to zoom in and out: not important
+-------------------
+--> jse.executeScript("document.body.style.zoom='50%'");
+
+

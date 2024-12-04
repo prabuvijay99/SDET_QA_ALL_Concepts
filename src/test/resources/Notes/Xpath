@@ -1,0 +1,78 @@
+Xpath:
+------
+it is address of the element
+
+Types of Xpath:
+---------------
+1.Absolute Xpath - full path
+2.Relative Xpath - partial path
+
+Absolute xpath(full path)
+-------------------------
+----> /html/body/div[1]/div[1]/div[1]/div[2]/div/div[3]/span/div[1]/span/div/div/div[2]/ul/span/span[5]/li/span/a/span/span/button/span
+
+relative xpath(partial path)
+----------------------------
+----> //*[@id="a-autoid-5-announce"]/span
+
+
+difference b/w absolute and relative:
+-----------------------------------
+1.Absolute starts with single slash
+  Relative starts with double slash
+
+2.absolute do not use attributes to find elements
+  relative use attributes to find elements
+  
+3.absolute traverse all along through each node till find its element  	
+  relative direct jump to the node by using the attribute
+
+syntax:
+-------
+Xpath with single attributes:
+----------------------------
+//tagname[@attribute='Value']  
+  
+Xpath with Multiple attributes:
+-------------------------------
+//tagename[@attribue='Value'][@attribute='Value']
+
+Xpath with Multiple attributes using 'and' and 'or':
+----------------------------------------------------
+//tagename[@attribue='Value' and @attribute='Value']
+
+//tagename[@attribue='Value' or @attribute='Value'] 
+
+Xpath with text() method:
+-------------------------
+//tagname[text()='Value'] 
+
+Xpath with contains method:
+--------------------------
+//tagname[contains(@attribute,'Part of value')]
+
+Xpath with starts-with:
+-----------------------
+//tagname[starts-with(@attribute,'First few char of Value')]
+
+
+
+Handling dynamic attributes by using xpath:
+----------------------------
+ex: id value is start and stop
+
+//tagname[@id='start' or @id='stop']
+
+//tagname[contains(@id,'st')]
+
+//tagname[starts-with(@id,'st')]
+
+chained xpath:
+--------------
+
+if we are not able to find ant attribute to locate we can go to parent element from there we can locate that element using chained xpath
+it is a combination of relative and absolute xpath
+
+//tagname[@attriute='value']/a/img
+
+

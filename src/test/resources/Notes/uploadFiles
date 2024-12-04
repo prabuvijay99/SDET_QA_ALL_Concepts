@@ -1,0 +1,5 @@
+Upload files:
+-------------
+just need to mention the path of the files and send thru the sendKeys
+
+we can validate by using the size and file name

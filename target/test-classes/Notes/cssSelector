@@ -1,0 +1,14 @@
+Css Selector:
+-------------
+Cascading style sheets
+it is combination of tagname and locators to identify the unique locator for the webelement
+1.tag and id				-->		tag#id
+2.tag and class				-->		tag.classname
+3.tag and attribute			-->		tag[attribute='Value']
+4.tag,class and attribute	-->		tag.classname[attribute='Value']
+
+
+to get the input from user:
+---------------------------
+Scanner scan=new Scanner(System.in);
+

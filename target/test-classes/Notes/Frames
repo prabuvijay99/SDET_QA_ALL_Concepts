@@ -1,0 +1,12 @@
+Frames/iFrames:
+---------------
+one web page is embedded in another web page that is called iframes or frames.
+
+driver.switchto().frame(id)
+driver.switchto().frame(name)
+driver.switchto().frame(web element)
+driver.switchto().frame(index)  -- use when having only one frame
+
+every time we need to switch to default content then only we can switch to next frame
+driver.switchto().defaultCotent()
+we cannot switch from one frame to another frame

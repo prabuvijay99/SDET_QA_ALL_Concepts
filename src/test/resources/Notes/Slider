@@ -1,0 +1,24 @@
+Slider:
+------
+
+--->dragandDropBy(Element,x,y)
+
+first we need to get the position of the web element by using getPosition() it return (x,y)
+
+for horizontal we need to increase or decrease the x value
+for Vertical we need to increase or decrease the y value
+
+KeyboardActions:
+----------------
+1.KeyDown(Keys.CTRL) - press down the ctrl key
+2.KeyUp(Keys.CTRL)- release the ctrl key
+3.Sendkeys("A") - send the alphabets
+
+example:
+-------
+ctrl+A-- 2 keys
+KeyDown(Keys.CTRL).sendkeys("A").KeyUp(Keys.CTRL).perform()
+
+Ctrl+Shift+A -- 3 keys
+KeyDown(Keys.CTRL).KeyDown(Keys.SHIFT).sendkeys("A").KeyUp(Keys.SHIFT).KeyUp(Keys.CTRL).perform()
+
